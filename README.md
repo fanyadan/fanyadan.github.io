@@ -5,7 +5,7 @@
 
 疫情期间一直在家办公，每天需要走openvpn用ssh连接公司网络内机器干活，但是这种连接一般不太稳定ssh经常用着用着就没反应了，后来改用autossh方便了很多，它可以在ssh连接中断后自动重连。
 我的办公环境是OpenSUSE TumbleWeed，autossh使用很简单:
-
+```
 ⚡=❯ rpm -qi autossh
 Name        : autossh
 Version     : 1.4g
@@ -49,10 +49,12 @@ Host youtube-socks5
 
 ⚡=❯ cat ~/.fishrc | grep autossh
 alias socks5='autossh -M 9091 -N -f youtube-socks5'
-
+```
 按照以上配置后autossh就可以正常运行了，只需执行socks5这个别名，启动后进程显示如下：
+```
 ⚡=❯ ps aux | grep ssh
 [...]
 ydfan     19082  0.0  0.0   2800   124 ?        Ss   21:08   0:00 autossh -M 9091 -N    youtube-socks5
 ydfan     19083  0.0  0.0   9988  6300 ?        S    21:08   0:00 /usr/bin/ssh -L 9091:127.0.0.1:9091 -R 9091:127.0.0.1:9092 -N youtube-socks5
 [...]
+```

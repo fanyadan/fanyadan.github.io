@@ -1,5 +1,6 @@
 ## Welcome to my obscured blog!
 
+<div style="width: 150pt">
 
 ### Use autossh
 

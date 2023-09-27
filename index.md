@@ -1,3 +1,3 @@
-## 目录
+# Welcome to my obscured blog!
 
-[用autossh在家办公](entry1.html)
+## [1. 如何用autossh在家办公](entry1.md)

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>韬 / τ 定律 vs 摩尔定律｜修订增强版</title>
+  <title>韬(τ)定律 vs 摩尔定律｜修订增强版</title>
   <style>
     :root{
       --bg:#070817;
@@ -94,11 +94,11 @@
   <main class="wrap">
     <section class="hero">
       <div class="eyebrow">Semiconductor Roadmap · 后摩尔时代 · 修订增强版</div>
-      <h1><span>韬 / τ 定律</span><br/>vs 摩尔定律</h1>
-      <p class="lead">一个是被半导体产业验证近六十年的经验规律；一个是华为提出的、面向后摩尔时代的“时间缩微 / τ Scaling”工程路线。二者不是简单替代关系，而是从不同维度解释和推动芯片性能演进。</p>
+      <h1><span>韬(τ)定律</span><br/>vs 摩尔定律</h1>
+      <p class="lead">一个是被半导体产业验证近六十年的经验规律；一个是华为提出的、面向后摩尔时代的“时间缩微(τ)Scaling”工程路线。二者不是简单替代关系，而是从不同维度解释和推动芯片性能演进。</p>
       <div class="chips">
         <span class="chip">Moore's Law</span>
-        <span class="chip">Tau / τ Scaling</span>
+        <span class="chip">Tau(τ)Scaling</span>
         <span class="chip">Dennard Scaling 失效</span>
         <span class="chip">互连延迟</span>
         <span class="chip">数据搬运成本</span>
@@ -110,20 +110,20 @@
       <article class="card half">
         <h2>一句话先讲清楚</h2>
         <p class="bigline"><span class="accent">摩尔定律</span>主要描述晶体管集成度长期提升；制程缩小是实现它的核心路径之一，但不是唯一因素。</p>
-        <p class="bigline"><span class="violet">韬 / τ 定律</span>则试图把优化重点从“更小的几何尺寸”扩展到“更短的有效时间”：更短信号路径、更低互连延迟、更少数据搬运、更少系统等待。</p>
+        <p class="bigline"><span class="violet">韬(τ)定律</span>则试图把优化重点从“更小的几何尺寸”扩展到“更短的有效时间”：更短信号路径、更低互连延迟、更少数据搬运、更少系统等待。</p>
         <div class="note">更严谨地说，τ Scaling 不是已经被证明可以替代摩尔定律，而是一个后摩尔时代的系统级优化框架。</div>
       </article>
 
       <article class="card half">
         <h2>汽车类比</h2>
         <p><b class="accent">摩尔定律</b>像是发动机技术和制造能力不断升级：更高热效率、更强材料、更精密制造，让单位体积塞进更多能力。</p>
-        <p><b class="violet">韬 / τ 定律</b>更像优化变速箱、传动效率、车重、风阻、轮胎抓地、ECU / TCU 标定和赛道路线。发动机不一定变大，但整车有效加速和圈速可以提升。</p>
+        <p><b class="violet">韬(τ)定律</b>更像优化变速箱、传动效率、车重、风阻、轮胎抓地、ECU / TCU 标定和赛道路线。发动机不一定变大，但整车有效加速和圈速可以提升。</p>
         <p class="muted">这个类比的边界是：芯片里的“时间”主要是信号传播、关键路径、通信、存储访问、同步和调度等待，而不是单纯时钟频率。</p>
       </article>
 
       <article class="card">
-        <h2>1. 什么是韬 / τ 定律？</h2>
-        <p>“韬定律”更准确可写成 <b>韬 / τ 定律</b> 或 <b>Tau Scaling Law</b>。τ 是希腊字母 tau，工程里常用来表示时间常数或时间尺度。华为的公开说法是：在后摩尔时代，用 <b>time / τ scaling</b> 作为新的指导原则之一，降低信号和数据在芯片、封装、系统中的有效传输与等待时间。</p>
+        <h2>1. 什么是韬(τ)定律？</h2>
+        <p>“韬定律”更准确可写成 <b>韬(τ)定律</b> 或 <b>Tau Scaling Law</b>。τ 是希腊字母 tau，工程里常用来表示时间常数或时间尺度。华为的公开说法是：在后摩尔时代，用 <b>time(τ)scaling</b> 作为新的指导原则之一，降低信号和数据在芯片、封装、系统中的有效传输与等待时间。</p>
         <div class="formula">
           传统几何缩微：更小特征尺寸 → 更高晶体管密度 → 更高潜在性能 / 更低单位成本<br/>
           τ Scaling：更短路径 + 更低延迟 + 更少数据搬运 + 更强系统协同 → 更高有效性能 / 能效
@@ -134,7 +134,7 @@
       <article class="card">
         <h2>2. 和摩尔定律的核心区别</h2>
         <table class="compare">
-          <thead><tr><th>对比点</th><th>摩尔定律</th><th>韬 / τ 定律</th></tr></thead>
+          <thead><tr><th>对比点</th><th>摩尔定律</th><th>韬(τ)定律</th></tr></thead>
           <tbody>
             <tr><td>核心变量</td><td>集成电路上的晶体管数量、晶体管密度、单位晶体管成本。</td><td>时间延迟 τ、信号传播时间、关键路径、数据搬运时间、系统执行等待。</td></tr>
             <tr><td>主要手段</td><td>制程缩小、光刻、材料、器件结构、EDA、制造良率、供应链协同。</td><td>器件、电路、芯片、封装、系统、软件协同优化；缩短路径，降低通信和同步成本。</td></tr>
@@ -172,7 +172,7 @@
       </article>
 
       <article class="card half">
-        <h2>5. 韬 / τ 定律：现实意义在哪里？</h2>
+        <h2>5. 韬(τ)定律：现实意义在哪里？</h2>
         <p>它的现实意义不在于“打败摩尔定律”，而在于当先进制程越来越难、越来越贵，甚至某些企业无法获得最先进制造资源时，仍然可以从架构、互连、封装和系统软件里继续挖性能。</p>
         <p>尤其在 AI 和 HPC 场景，真正拖慢系统的经常不是单个计算单元，而是数据搬运、通信、同步、缓存失配、芯片间互联和内存访问。</p>
         <div class="score">
@@ -182,7 +182,7 @@
 
       <article class="card">
         <h2>6. 能否替代摩尔定律？</h2>
-        <p class="bigline">不能简单说韬 / τ 定律已经替代摩尔定律。</p>
+        <p class="bigline">不能简单说韬(τ)定律已经替代摩尔定律。</p>
         <p>更准确的关系是：摩尔定律变慢以后，τ Scaling 试图从“非制程维度”继续提升有效性能。先进制程如果能继续推进，几何缩微仍然非常有价值；如果制程受限，那么时间缩微、系统协同和架构优化就会变得更重要。</p>
         <div class="formula">
           客观表述：<br/>
@@ -215,7 +215,7 @@
       <article class="card">
         <h2>最终判断</h2>
         <p>摩尔定律的产业含金量更高，因为它已经被历史验证，并塑造了整个半导体产业几十年的技术路线。</p>
-        <p>韬 / τ 定律的现实意义在于：在先进制程受限、摩尔定律放缓、Dennard Scaling 失效、AI / HPC 对通信和数据搬运极度敏感的背景下，企业必须从架构、互连、封装、存储层次和系统软件中继续榨性能。</p>
+        <p>韬(τ)定律的现实意义在于：在先进制程受限、摩尔定律放缓、Dennard Scaling 失效、AI / HPC 对通信和数据搬运极度敏感的背景下，企业必须从架构、互连、封装、存储层次和系统软件中继续榨性能。</p>
         <p class="bigline">所以它们不是“谁打败谁”的关系，而是：<br/>摩尔定律描述晶体管集成度的长期提升；<br/>τ Scaling 试图让已有晶体管、芯片封装和系统协同跑得更聪明。</p>
       </article>
 
